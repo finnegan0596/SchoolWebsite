@@ -1,0 +1,20 @@
+---
+description: Require branch-per-change and PR workflow
+alwaysApply: true
+---
+
+# Branch and Pull Request Workflow
+
+Follow this process for all code changes:
+
+1. Never make feature or fix changes directly on `master`.
+2. Before starting work, create a new branch from up-to-date `master`.
+3. Keep changes scoped to that branch.
+4. Commit meaningful checkpoints with clear messages.
+5. Push the branch to `origin`.
+6. Open a pull request into `master` that includes:
+   - what changed
+   - why it changed
+   - how it was validated
+
+If already on `master`, create a branch immediately before editing files.

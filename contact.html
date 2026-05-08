@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Bright Future Academy for admissions and general inquiries."
+    />
+    <title>Bright Future Academy | Contact</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="index.html">Bright Future Academy</a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menu
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <div class="container">
+        <section class="section" aria-labelledby="contact-heading">
+          <h1 id="contact-heading">Contact Us</h1>
+          <p>
+            Reach out for admissions information, visits, or general school
+            questions.
+          </p>
+          <p class="muted">
+            123 Learning Lane, Springfield<br />
+            (555) 123-4567<br />
+            admissions@brightfutureacademy.edu
+          </p>
+        </section>
+
+        <section class="section" aria-labelledby="form-heading">
+          <h2 id="form-heading">Inquiry Form</h2>
+          <form
+            name="inquiry"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            action="contact.html?submitted=true"
+          >
+            <input type="hidden" name="form-name" value="inquiry" />
+            <p hidden>
+              <label>
+                Do not fill this out:
+                <input name="bot-field" />
+              </label>
+            </p>
+
+            <div>
+              <label for="parent-name">Parent/Guardian Name</label>
+              <input id="parent-name" name="parentName" type="text" required />
+            </div>
+
+            <div>
+              <label for="student-grade">Student Grade of Interest</label>
+              <input
+                id="student-grade"
+                name="studentGrade"
+                type="text"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email">Email Address</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button class="button" type="submit">Submit Inquiry</button>
+          </form>
+          <p id="form-status" class="muted" aria-live="polite"></p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p><strong>Bright Future Academy</strong></p>
+        <p class="muted">123 Learning Lane, Springfield | (555) 123-4567</p>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
